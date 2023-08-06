@@ -2,161 +2,168 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
 
-
 * {
     box-sizing: border-box;
-    font-weight: normal;
+    word-wrap: break-word;
     font-family: 'Edu SA Beginner', cursive;
-}
-body {
-    background-color: #fff;
-    text-align: center;
-    line-height: 1.9;
-    letter-spacing: 0.2em;
-    font-size: 12px;
+    font-size: 13px;
     color: #888;
 }
 
+body {
+    margin: 0 auto;
+    width: 700px;
+    background-color: #fff;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    line-height: 1.8;
+}
+
 header {
-    margin: 1.5em auto 1.5em auto;
+    margin: 1.0em auto 1.0em auto;
     width: 80%;
     max-width: 500px;
+    max-height: 555px;
     position: relative;
     animation: FadeIn 5s;
 }
+
 header img {
     display: block;
     width: 100%;
-}
+    height: 400px;
+    object-fit: cover;
+  }
+  
 header h1 {
     display: inline-block;
     position: absolute;
-    top: 46%;
-    left: 50%;
+    width: 100%;
+    top: 55%;
     transform: translate(-50%, -50%);
-    background-color: #88888820;
-    letter-spacing: 0.5em;
-    text-indent: 0.5em;
+    background-color: #88888812;
     font-family: 'Cherry Bomb One', cursive;
-    font-size: 2.1em;
+    font-size: 2.8em;
+    text-indent: 0.5em;
     color: #a4c1d7;
-    -webkit-text-stroke: 1px #ffffff;
+    -webkit-text-stroke: 1px #ffffffc1;
 }
 
 nav {
-    margin: 0 auto 1.5em;
     animation: FadeIn 1s;
 }
-nav ul li {
-    margin: 0 1em;
-    display: inline-block;
-}
-nav ul li a{
-    font-size: 1.2em;
-    font-family: 'Cherry Bomb One', cursive;
+
+nav ul {
+    margin: 0.5em;
+    padding: 0.5em;
 }
 
-a {
-    text-decoration: none;
+nav ul li {
+    margin: 0 0.6em;
+    display: inline-block;
+}
+
+nav ul li a{
+    font-family: 'Cherry Bomb One', cursive;
+    font-size: 1.4em;
     font-weight: bold;
+}
+
+a{
+    text-decoration: none;
     color: #a4c1d7;
 }
+
 a:hover {
     transition: .5s color;
     color: #fff;
 }
 
 section {
-    margin: 3em auto;
-    padding: 0em 3em;
+    margin: 2.2em auto;
+    padding: 0.2em 4em;
     max-width: 600px;
 }
+
 section > section {
-    display: inline-block;
-    word-wrap: break-word;
+    display: block;
     background-color:  #a4c1d72d;
 }
 
 section h2 {
+    font-family: 'Cherry Bomb One', cursive;
+    font-size: 1.5em;
     text-indent: 0.3em;
     letter-spacing: 0.2em;
-    font-family: 'Cherry Bomb One', cursive;
 }
+
 section h3 {
     display: inline-block;
-    padding: 0.2em 0.5em;
+    padding: 0 0.8em;
     background-color: #a4c1d7;
-    font-size: 11px;
     color: #fff;
 }
+
 section ul li {
-    margin: 0.1em;
-    padding: 0.4em;
-    list-style-position: inside;
+    padding-top: 0.5em;
+    padding-bottom: 0.8em;
 }
+
 section mark {
     background: linear-gradient(transparent 60%, #efefef 40%);
 }
 
 div.bar {
     margin: 1em auto;
-    width: 1px;
-    height: 30px;
+    width: 0.1em;
+    height: 2.5em;
     background-color: #888;
 }
 
 input[type] {
+    margin-top: 0.5em;
     padding: 0.2em 0.5em;
+    width: 9.7em;
+    height: 1.9em;
     background-color: #ffffff59;
     border: 0px solid #88888843;
     border-bottom-width : 0.06em;
-    border-radius: 0;
     color: #888;
 }
+
+input[type=email]{
+    width: 12em;
+}
+
 textarea {
-    margin-top: 2em;
+    margin-top: 1.6em;
+    margin-bottom: 0.5em;
     width: 14em;
-    height: 5em;
-}
-input[type=text] {
-    width: 9.7em;
-    height: 1.9em;
-}
-input[type=date] {
-    margin-top: 4px;
-    width: 9.7em;
-    height: 1.9em;
-}
-input[type=number] {
-    margin-top: 4px;
-    width: 9.7em;
-    height: 1.9em;
-}
-input[type=submit] {
-    width: auto;
+    height: 4em;
 }
 
 button{
-    width: auto;
-    height: auto;
-    padding: 0.2em 0.35em;
+    padding: 0.3em 0.5em;
     background-color: #a4c1d7;
     border: thin solid #888;
     color: #ffffff;
 }
 
 footer {
-    margin: 1em auto 1.5em;
+    margin: 1em auto;
 }
 
-@media screen and (min-width: 401px) {
-    body {
-        font-size: 13px;
+/*MOBILE*/
+@media (max-width: 400px){
+    * {
+        font-size: 140px;
     }
 }
-@media screen and (max-width: 400px) {
-    body {
-        font-size: 140px;
+
+@media (min-width: 401px) {
+    * {
+        font-size: 13px;
     }
 }
 
@@ -174,38 +181,39 @@ footer {
     flex-wrap: wrap;
     align-items: flex-start;
 }
+
 .reviewCards {
-    height: 250px;
-    width: 250px;
-    margin: 5px;
-    padding: 30px;
+    height: 22em;
+    width: 18em;
+    margin: 0.2em;
+    padding: 2.5em;
     text-align: center;
     border: solid thin #88888851;
     word-wrap: break-word;
 }
+
   .card-rating {
-    margin: 5px;
-    padding: 5px;
-    font-size: 15px;
+    margin: 0.4em;
+    padding: 0.4em;
+    font-size: 1.3em;
     color: #a4c1d7;
   }
+
   .card-text {
-    margin-top: 2px;
-    margin-bottom: 10px;
-    padding: 0px;
-    font-size: 14px;
-    font-weight: thin;
+    margin-top: 0.2em;
+    margin-bottom: 0.8em;
+    font-size: 1.1em;
     color: #888;
   }
+
   .card-date {
-    margin-bottom: 0px;
-    padding: 0px;
-    font-size: 13px;
+    margin-bottom: 0em;
+    font-size: 1em;
     color: #888;
   }
+
   .card-name {
-    margin-top: 0px;
-    padding: 0px;
-    font-size: 11.1px;
+    margin-top: 0em;
+    font-size: 0.85em;
     color: #888;
   }
