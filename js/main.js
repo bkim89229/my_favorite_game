@@ -18,7 +18,7 @@
 // Generating review cards
 function reviewCards() {
   const reviewCont = document.getElementById("reviewContainer")
-  reviewCont.innerHTML = ""; // Clear existing cards
+  reviewCont.innerHTML = "";
 
   reviewData.forEach(review => {
     const card = document.createElement("div");
@@ -55,6 +55,12 @@ function addReview() {
   const date = document.getElementById("date").value;
   const rating = parseInt(document.getElementById("rating").value);
   const reviewText = document.getElementById("reviewText").value;
+
+// Validation  
+  if (name == "" || date == "" || rating == "" || reviewText == "") {
+      alert("Please enter your information and try again");
+      return false; 
+  }
 
   reviewData.push({
     name: name,
