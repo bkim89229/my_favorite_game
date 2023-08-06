@@ -150,17 +150,13 @@ footer {
 }
 
 @media screen and (min-width: 401px) {
-
-    /* 폰트사이즈 */
     body {
         font-size: 13px;
     }
 }
 @media screen and (max-width: 400px) {
-
-    /* 폰트사이즈 */
     body {
-        font-size: 14px;
+        font-size: 140px;
     }
 }
 
