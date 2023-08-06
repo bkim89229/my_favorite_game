@@ -157,13 +157,13 @@ footer {
 /*MOBILE*/
 @media (max-width: 400px){
     * {
-        font-size: 140px;
+        font-size: 14px;
     }
 }
 
 @media (min-width: 401px) {
     * {
-        font-size: 13px;
+        font-size: 14px;
     }
 }
 
