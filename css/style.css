@@ -6,7 +6,6 @@
     box-sizing: border-box;
     word-wrap: break-word;
     font-family: 'Edu SA Beginner', cursive;
-    font-size: 13px;
     color: #888;
 }
 
@@ -15,9 +14,10 @@ body {
     width: 700px;
     background-color: #fff;
     text-align: center;
+    font-size: 16px;
     font-weight: normal;
     letter-spacing: 0.2em;
-    line-height: 1.8;
+    line-height: 1.8em;
 }
 
 header {
@@ -66,7 +66,8 @@ nav ul li {
 
 nav ul li a{
     font-family: 'Cherry Bomb One', cursive;
-    font-size: 1.4em;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
     font-weight: bold;
 }
 
@@ -88,7 +89,9 @@ section {
 
 section > section {
     display: block;
+    padding: 0.3em 1.8em 0.3em 1.8em;
     background-color:  #a4c1d72d;
+    letter-spacing: 0.1em;
 }
 
 section h2 {
@@ -100,9 +103,11 @@ section h2 {
 
 section h3 {
     display: inline-block;
+    margin-bottom: 0.3em;
     padding: 0 0.8em;
     background-color: #a4c1d7;
     color: #fff;
+    letter-spacing: 0.1em;
 }
 
 section ul li {
@@ -129,11 +134,13 @@ input[type] {
     background-color: #ffffff59;
     border: 0px solid #88888843;
     border-bottom-width : 0.06em;
+    font-size: 1em;
     color: #888;
 }
 
 input[type=email]{
-    width: 12em;
+    font-size: 1em;
+    width: 15em;
 }
 
 textarea {
@@ -141,39 +148,20 @@ textarea {
     margin-bottom: 0.5em;
     width: 14em;
     height: 4em;
+    font-size: 1em;
 }
 
 button{
     padding: 0.3em 0.5em;
     background-color: #a4c1d7;
     border: none;
+    font-size: 1em;
     color: #ffffff;
 }
 
 footer {
     margin: 1em auto;
-}
-
-/*MOBILE*/
-@media (max-width: 400px){
-    * {
-        font-size: 14px;
-    }
-}
-
-@media (min-width: 401px) {
-    * {
-        font-size: 13px;
-    }
-}
-
-@keyframes FadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+    font-size: 0.8em;
 }
 
 #reviewContainer {
@@ -183,37 +171,58 @@ footer {
 }
 
 .reviewCards {
-    height: 22em;
-    width: 18em;
-    margin: 0.2em;
-    padding: 2.5em;
+    height: 100%;
+    width: 100%;
+    margin-top: 0.35em;
+    margin-bottom: 0.35em;
+    padding: 0.1em 3em 1em 3em;
     text-align: center;
-    border: solid thin #88888851;
+    border: dashed thin #88888851;
     word-wrap: break-word;
 }
 
   .card-rating {
-    margin: 0.4em;
-    padding: 0.4em;
+    margin-top: 5%;
+    margin-bottom: 5%;
     font-size: 1.3em;
     color: #a4c1d7;
   }
 
   .card-text {
-    margin-top: 0.2em;
-    margin-bottom: 0.8em;
-    font-size: 1.1em;
-    color: #888;
-  }
-
-  .card-date {
-    margin-bottom: 0em;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    letter-spacing: 0.2em;
+    line-height: 1.8em;
     font-size: 1em;
     color: #888;
   }
 
-  .card-name {
-    margin-top: 0em;
+  .card-date {
+    margin-top: 0%;
+    margin-bottom: 0%;
     font-size: 0.85em;
     color: #888;
   }
+
+  .card-name {
+    margin-top: 0%;
+    margin-bottom: 2%;
+    font-size: 0.8em;
+    color: #888;
+  }
+
+  @keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+  /*MOBILE*/
+@media (max-width: 400px){
+    * {
+        font-size: 14px;
+    }
+}
