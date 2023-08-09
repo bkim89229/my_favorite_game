@@ -1,33 +1,33 @@
 /*
  * WEB222 Final Assessment
  *
- * Honesty Statement: 
- * I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. 
- * No part of this assessment has been copied manually or electronically 
- * from any other source (including web sites) except for the information 
- * supplied by the WEB222 instructors and / or made available in this assessment for my use. 
+ * Honesty Statement:
+ * I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy.
+ * No part of this assessment has been copied manually or electronically
+ * from any other source (including web sites) except for the information
+ * supplied by the WEB222 instructors and / or made available in this assessment for my use.
  * I also declare that no part of this assignment has been distributed to other students.
  *
  * Please update the following with your information:
  *
  *      Name:       Boyun Kim
  *      Student ID: 116526229
- *      Date:       2023-08-06
+ *      Date:       2023-08-09
  */
 
 // Generating review cards
 function reviewCards() {
-  const reviewCont = document.getElementById("reviewContainer")
+  const reviewCont = document.getElementById("reviewContainer");
   reviewCont.innerHTML = "";
 
-  reviewData.forEach(review => {
+  reviewData.forEach((review) => {
     const card = document.createElement("div");
     card.classList.add("reviewCards");
 
     const rating = document.createElement("p");
     rating.classList.add("card-rating");
     rating.textContent = starRating(review.rating);
-    
+
     const reviewText = document.createElement("p");
     reviewText.textContent = review.text;
     reviewText.classList.add("card-text");
@@ -56,10 +56,10 @@ function addReview() {
   const rating = parseInt(document.getElementById("rating").value);
   const reviewText = document.getElementById("reviewText").value;
 
-// Validation  
+  // Validation
   if (name == "" || date == "" || rating == "" || reviewText == "") {
-      alert("Please enter your information and try again");
-      return false; 
+    alert("Please enter your information and try again");
+    return false;
   }
 
   reviewData.push({

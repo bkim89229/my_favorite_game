@@ -1,228 +1,228 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap");
 
 * {
-    box-sizing: border-box;
-    word-wrap: break-word;
-    font-family: 'Edu SA Beginner', cursive;
-    color: #888;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  font-family: "Edu SA Beginner", cursive;
+  color: #888;
 }
 
 body {
-    margin: 0 auto;
-    width: 700px;
-    background-color: #fff;
-    text-align: center;
-    font-size: 16px;
-    font-weight: normal;
-    letter-spacing: 0.2em;
-    line-height: 1.8em;
+  margin: 0 auto;
+  width: 700px;
+  background-color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 0.2em;
+  line-height: 1.8em;
 }
 
 header {
-    margin: 1.0em auto 1.0em auto;
-    width: 80%;
-    max-width: 500px;
-    max-height: 555px;
-    position: relative;
-    animation: FadeIn 5s;
+  margin: 1em auto 1em auto;
+  width: 80%;
+  max-width: 500px;
+  max-height: 555px;
+  position: relative;
+  animation: FadeIn 5s;
 }
 
 header img {
-    display: block;
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-  }
-  
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
 header h1 {
-    display: inline-block;
-    position: absolute;
-    width: 100%;
-    top: 55%;
-    transform: translate(-50%, -50%);
-    background-color: #88888812;
-    font-family: 'Cherry Bomb One', cursive;
-    font-size: 2.8em;
-    text-indent: 0.5em;
-    color: #a4c1d7;
-    -webkit-text-stroke: 1px #ffffffc1;
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  background-color: #88888812;
+  font-family: "Cherry Bomb One", cursive;
+  font-size: 2.8em;
+  text-indent: 0.5em;
+  color: #a4c1d7;
+  -webkit-text-stroke: 1px #ffffffc1;
 }
 
 nav {
-    animation: FadeIn 1s;
+  animation: FadeIn 1s;
 }
 
 nav ul {
-    margin: 0.5em;
-    padding: 0.5em;
+  margin: 0.5em;
+  padding: 0.5em;
 }
 
 nav ul li {
-    margin: 0 0.6em;
-    display: inline-block;
+  margin: 0 0.6em;
+  display: inline-block;
 }
 
-nav ul li a{
-    font-family: 'Cherry Bomb One', cursive;
-    font-size: 1.2em;
-    letter-spacing: 0.1em;
-    font-weight: bold;
+nav ul li a {
+  font-family: "Cherry Bomb One", cursive;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  font-weight: bold;
 }
 
-a{
-    text-decoration: none;
-    color: #a4c1d7;
+a {
+  text-decoration: none;
+  color: #a4c1d7;
 }
 
 a:hover {
-    transition: .5s color;
-    color: #fff;
+  transition: 0.5s color;
+  color: #fff;
 }
 
 section {
-    margin: 2.2em auto;
-    padding: 0.2em 4em;
-    max-width: 600px;
+  margin: 2.2em auto;
+  padding: 0.2em 4em;
+  max-width: 600px;
 }
 
 section > section {
-    display: block;
-    padding: 0.3em 1.8em 0.3em 1.8em;
-    background-color:  #a4c1d72d;
-    letter-spacing: 0.1em;
+  display: block;
+  padding: 0.3em 1.8em 0.3em 1.8em;
+  background-color: #a4c1d72d;
+  letter-spacing: 0.1em;
 }
 
 section h2 {
-    font-family: 'Cherry Bomb One', cursive;
-    font-size: 1.5em;
-    text-indent: 0.3em;
-    letter-spacing: 0.2em;
+  font-family: "Cherry Bomb One", cursive;
+  font-size: 1.5em;
+  text-indent: 0.3em;
+  letter-spacing: 0.2em;
 }
 
 section h3 {
-    display: inline-block;
-    margin-bottom: 0.3em;
-    padding: 0 0.8em;
-    background-color: #a4c1d7;
-    color: #fff;
-    letter-spacing: 0.1em;
+  display: inline-block;
+  margin-bottom: 0.3em;
+  padding: 0 0.8em;
+  background-color: #a4c1d7;
+  color: #fff;
+  letter-spacing: 0.1em;
 }
 
 section ul li {
-    padding-top: 0.5em;
-    padding-bottom: 0.8em;
+  padding-top: 0.5em;
+  padding-bottom: 0.8em;
 }
 
 section mark {
-    background: linear-gradient(transparent 60%, #efefef 40%);
+  background: linear-gradient(transparent 60%, #efefef 40%);
 }
 
 div.bar {
-    margin: 1em auto;
-    width: 0.1em;
-    height: 2.5em;
-    background-color: #888;
+  margin: 1em auto;
+  width: 0.1em;
+  height: 2.5em;
+  background-color: #888;
 }
 
 input[type] {
-    margin-top: 0.5em;
-    padding: 0.2em 0.5em;
-    width: 9.7em;
-    height: 1.9em;
-    background-color: #ffffff59;
-    border: 0px solid #88888843;
-    border-bottom-width : 0.06em;
-    font-size: 1em;
-    color: #888;
+  margin-top: 0.5em;
+  padding: 0.2em 0.5em;
+  width: 9.7em;
+  height: 1.9em;
+  background-color: #ffffff59;
+  border: 0px solid #88888843;
+  border-bottom-width: 0.06em;
+  font-size: 1em;
+  color: #888;
 }
 
-input[type=email]{
-    font-size: 1em;
-    width: 15em;
+input[type="email"] {
+  font-size: 1em;
+  width: 15em;
 }
 
 textarea {
-    margin-top: 1.6em;
-    margin-bottom: 0.5em;
-    width: 14em;
-    height: 4em;
-    font-size: 1em;
+  margin-top: 1.6em;
+  margin-bottom: 0.5em;
+  width: 14em;
+  height: 4em;
+  font-size: 1em;
 }
 
-button{
-    padding: 0.3em 0.5em;
-    background-color: #a4c1d7;
-    border: none;
-    font-size: 1em;
-    color: #ffffff;
+button {
+  padding: 0.3em 0.5em;
+  background-color: #a4c1d7;
+  border: none;
+  font-size: 1em;
+  color: #ffffff;
 }
 
 footer {
-    margin: 1em auto;
-    font-size: 0.8em;
+  margin: 1em auto;
+  font-size: 0.8em;
 }
 
 #reviewContainer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .reviewCards {
-    height: 100%;
-    width: 100%;
-    margin-top: 0.35em;
-    margin-bottom: 0.35em;
-    padding: 0.1em 3em 1em 3em;
-    text-align: center;
-    border: dashed thin #88888851;
-    word-wrap: break-word;
+  height: 100%;
+  width: 100%;
+  margin-top: 0.35em;
+  margin-bottom: 0.35em;
+  padding: 0.1em 3em 1em 3em;
+  text-align: center;
+  border: dashed thin #88888851;
+  word-wrap: break-word;
 }
 
-  .card-rating {
-    margin-top: 5%;
-    margin-bottom: 5%;
-    font-size: 1.3em;
-    color: #a4c1d7;
-  }
-
-  .card-text {
-    margin-top: 0%;
-    margin-bottom: 5%;
-    letter-spacing: 0.2em;
-    line-height: 1.8em;
-    font-size: 1em;
-    color: #888;
-  }
-
-  .card-date {
-    margin-top: 0%;
-    margin-bottom: 0%;
-    font-size: 0.85em;
-    color: #888;
-  }
-
-  .card-name {
-    margin-top: 0%;
-    margin-bottom: 2%;
-    font-size: 0.8em;
-    color: #888;
-  }
-
-  @keyframes FadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+.card-rating {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 1.3em;
+  color: #a4c1d7;
 }
 
-  /*MOBILE*/
-@media (max-width: 400px){
-    * {
-        font-size: 14px;
-    }
+.card-text {
+  margin-top: 0%;
+  margin-bottom: 5%;
+  letter-spacing: 0.2em;
+  line-height: 1.8em;
+  font-size: 1em;
+  color: #888;
+}
+
+.card-date {
+  margin-top: 0%;
+  margin-bottom: 0%;
+  font-size: 0.85em;
+  color: #888;
+}
+
+.card-name {
+  margin-top: 0%;
+  margin-bottom: 2%;
+  font-size: 0.8em;
+  color: #888;
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*MOBILE*/
+@media (max-width: 400px) {
+  * {
+    font-size: 14px;
+  }
 }
